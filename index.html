@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es"><head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Bienvenida a nuestros 10 meses! ❤️</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -260,6 +260,58 @@
                 opacity: 1;
                 transform: none;
                 filter: none;
+            }
+        }
+
+        @media (max-width: 640px) {
+            html, body {
+                width: 100%;
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+
+            header .max-w-4xl,
+            main {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+
+            header nav {
+                width: 100%;
+                min-width: 0;
+                gap: 0.125rem;
+            }
+
+            header nav .nav-tab {
+                flex: 1 1 0;
+                min-width: 0;
+                justify-content: center;
+                gap: 0.25rem;
+                padding-left: 0.35rem;
+                padding-right: 0.35rem;
+                font-size: 0.625rem;
+            }
+
+            header nav .nav-tab svg {
+                width: 0.75rem;
+                height: 0.75rem;
+                flex-shrink: 0;
+            }
+
+            .letter-paper {
+                padding: 1.25rem;
+            }
+
+            #tab-rompecabezas > div,
+            #tab-disculpa > div,
+            #tab-playlist > div,
+            #tab-galeria > div {
+                min-width: 0;
+            }
+
+            #boardContainer {
+                width: 100%;
+                max-width: 370px;
             }
         }
     </style>
@@ -2167,7 +2219,7 @@ addEventListener('load',()=>setTimeout(stars,60));
 })();
 </script>
 
-<style id="exStyle4">header nav{flex-wrap:nowrap!important;justify-content:center!important;overflow:visible!important}header nav .nav-tab{flex:0 0 auto}</style>
+<style id="exStyle4">header nav{flex-wrap:nowrap!important;width:100%!important;min-width:0!important;justify-content:center!important;overflow:visible!important}header nav .nav-tab{flex:1 1 0!important;min-width:0!important;justify-content:center!important;gap:.25rem!important;padding-left:.35rem!important;padding-right:.35rem!important;white-space:nowrap!important;font-size:.625rem!important}header nav .nav-tab svg{width:.75rem!important;height:.75rem!important}@media(max-width:400px){header nav .nav-tab{gap:.125rem!important;padding-left:.2rem!important;padding-right:.2rem!important;font-size:.56rem!important}header nav .nav-tab svg{display:none!important}}</style>
 <style id="exStyle5">.sk-l{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.sk-l polyline{fill:none;stroke:#fff;stroke-opacity:.28;stroke-width:1;vector-effect:non-scaling-stroke;stroke-dasharray:4 4}.smap{margin:1.2rem auto 0;max-width:20rem;background:#000;border-radius:1rem;overflow:hidden;box-shadow:0 14px 30px -14px rgba(0,0,0,.6);cursor:zoom-in}.smap img{width:100%;display:block}.smap figcaption{color:#cbd5e1;font-size:.75rem;padding:.5rem}.smap.zm{position:fixed;inset:0;z-index:90;max-width:none;margin:0;border-radius:0;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:zoom-out}.smap.zm img{max-height:86vh;width:auto;max-width:100%}</style>
 <style id="exStyle6">label[for="drawingFileInput"]{display:none!important}#lightboxNoteInput{resize:none;background:#fff8f6}</style>
 </body></html>
